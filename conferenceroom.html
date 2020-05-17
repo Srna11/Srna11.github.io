@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Webb Hotell Conferencerooms</title>
+        <link rel="stylesheet" href="gridsecondary.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+        <main>
+            <img id="pictureLogo" src="logo.png" alt="The hotel logo" />
+        </main>
+
+        <header id="navigation">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" >Startsite</a>
+                <a href="bokning.html" class="active">Booking</a>
+                <a href="upplevelse.html">Experience</a>
+                <a href="hitta.html">Find</a>
+                <a href="restaurangbar.html">Resturant and bar</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </header>
+
+        <div id="picturemap">
+            <div class="container">
+                <form action="action_page.php">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="First name...">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Last name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Cell phone number</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="cnumber" name="cellphonenumber" placeholder="Cell phone number..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Email</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="mail" name="email" placeholder="Email address..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label>Conference room</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="rooms" name="rooms">
+                                <option value="enkelrum">Small</option>
+                                <option value="dubbelrum">Medium</option>
+                                <option value="quadsRoom">Large</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Your rent</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="rent" name="yourrent" placeholder="How long whould you like to rent a conference room..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label id="subject">Any questions</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="question" name="anyquestion" placeholder="Write something.." style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <p>Webb Hotell Number: +46 705 467 335</p>
+            <p>Webb Hotell address:Goat Point, FIQQ 1ZZ, Falklandsöarna</p>
+            <a class="linker" href="mailto:webbhotell@gmail.com">Gmail: webbhotell@gmail.com</a>
+        </footer>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+
+
+    </body>
+
+</html>
